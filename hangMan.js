@@ -1,4 +1,4 @@
-let buttons = document.getElementsByClassName('alphabet');
+let buttons = document.getElementsByClassName('btn');
 
 buttons.addEventListener('click',()=>{
 
