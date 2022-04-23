@@ -8,53 +8,50 @@
     <link href="/hangMan.css" ref="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
-<body class="container"> 
-    <div class="container-lg d-flex justify-content-center">
-        <div class="p-3 mb-2 bg-primary">
-                <div class="row">
-                    <div class="row" >
-                        <div class="p-3 border bg-light" id="hangmanPic" align="center">
-                            <img src="/images/hangman1.png" alt="">
-                        </div>
-                    <div class="row">
-                        <div class="p-3 border bg-light" id="word">Guessing word</div>
-                    <div class="row">
-                        <div class="p-3 border bg-light" id="keyboard" align="center">
-                            <button type="button" class="btn btn-secondary key" id="Q">Q</button>
-                            <button type="button" class="btn btn-secondary key" id="W">W</button>
-                            <button type="button" class="btn btn-secondary key" id="W">E</button>
-                            <button type="button" class="btn btn-secondary key" id="R">R</button>
-                            <button type="button" class="btn btn-secondary key" id="T">T</button>
-                            <button type="button" class="btn btn-secondary key" id="Y">Y</button>
-                            <button type="button" class="btn btn-secondary key" id="U">U</button>
-                            <button type="button" class="btn btn-secondary key" id="I">I</button>
-                            <button type="button" class="btn btn-secondary key" id="O">O</button>
-                            <button type="button" class="btn btn-secondary key" id="P">P</button>
-                            <br>
-                            <button type="button" class="btn btn-secondary key" id="A">A</button>
-                            <button type="button" class="btn btn-secondary key" id="S">S</button>
-                            <button type="button" class="btn btn-secondary key" id="D">D</button>
-                            <button type="button" class="btn btn-secondary key" id="F">F</button>
-                            <button type="button" class="btn btn-secondary key" id="G">G</button>
-                            <button type="button" class="btn btn-secondary key" id="H">H</button>
-                            <button type="button" class="btn btn-secondary key" id="J">J</button>
-                            <button type="button" class="btn btn-secondary key" id="K">K</button>
-                            <button type="button" class="btn btn-secondary key" id="L">L</button>
-                            <br>
-                            <button type="button" class="btn btn-secondary key" id="Z">Z</button>
-                            <button type="button" class="btn btn-secondary key" id="X">X</button>
-                            <button type="button" class="btn btn-secondary key" id="C">C</button>
-                            <button type="button" class="btn btn-secondary key" id="V">V</button>
-                            <button type="button" class="btn btn-secondary key" id="B">B</button>
-                            <button type="button" class="btn btn-secondary key" id="N">N</button>
-                            <button type="button" class="btn btn-secondary key" id="M">M</button>
-                        </div>
-                    <div class="row">
-                        <div class="p-3 border bg-light" align="center">
-                            <button type="button" class="btn-secondary" id="reset">Give Up</button>
-                        </div>
-                    </div>
-                </div>
+<body class="container-fluid"> 
+    <div class="row-no-gutters">
+        <div class="p-3 border bg-light" id="hangmanPic" align="center">
+            <img src="/images/hangman1.png" alt="">
+        </div>
+        <div class="row">
+            <div class="p-3 border bg-light" id="word" align="center">
+                    _ _ _ _ _ _ _ _ _ _ _ _ _
+            </div>
+        </div>
+        <div class="row">
+            <div class="p-3 border bg-light" id="keyboard" align="center">
+            <button type="button" class="btn btn-secondary key" id="Q">Q</button>
+            <button type="button" class="btn btn-secondary key" id="W">W</button>
+            <button type="button" class="btn btn-secondary key" id="W">E</button>
+            <button type="button" class="btn btn-secondary key" id="R">R</button>
+            <button type="button" class="btn btn-secondary key" id="T">T</button>
+            <button type="button" class="btn btn-secondary key" id="Y">Y</button>
+            <button type="button" class="btn btn-secondary key" id="U">U</button>
+            <button type="button" class="btn btn-secondary key" id="I">I</button>
+            <button type="button" class="btn btn-secondary key" id="O">O</button>
+            <button type="button" class="btn btn-secondary key" id="P">P</button>
+            <br>
+            <button type="button" class="btn btn-secondary key" id="A">A</button>
+            <button type="button" class="btn btn-secondary key" id="S">S</button>
+            <button type="button" class="btn btn-secondary key" id="D">D</button>
+            <button type="button" class="btn btn-secondary key" id="F">F</button>
+            <button type="button" class="btn btn-secondary key" id="G">G</button>
+            <button type="button" class="btn btn-secondary key" id="H">H</button>
+            <button type="button" class="btn btn-secondary key" id="J">J</button>
+            <button type="button" class="btn btn-secondary key" id="K">K</button>
+            <button type="button" class="btn btn-secondary key" id="L">L</button>
+            <br>
+            <button type="button" class="btn btn-secondary key" id="Z">Z</button>
+            <button type="button" class="btn btn-secondary key" id="X">X</button>
+            <button type="button" class="btn btn-secondary key" id="C">C</button>
+            <button type="button" class="btn btn-secondary key" id="V">V</button>
+            <button type="button" class="btn btn-secondary key" id="B">B</button>
+            <button type="button" class="btn btn-secondary key" id="N">N</button>
+            <button type="button" class="btn btn-secondary key" id="M">M</button>
+            </div>
+        </div>
+        <div class="row">
+            <button type="button" class="btn-secondary" id="reset">Give Up</button>
         </div>
     </div>
     <script src="hangMan.js"></script>
