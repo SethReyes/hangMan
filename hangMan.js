@@ -159,6 +159,7 @@ document.getElementById('hangmanPic').appendChild(hangman)
 
 keys.map(key=>{
     key.addEventListener('click',()=>{
+        key.disable = true;
         if (hiddenWord.includes(key.innerText)){
             let dispWord=displayWord.innerText.split("");
             console.log('YES')
@@ -179,8 +180,8 @@ keys.map(key=>{
                 //update image
                 hangman.src =`images/hangman${attempts}.png`
                 // rm.removeChild(remove.childNode[0]);
-                document.getElementById('hangmanPic').appendChild(hangman)
-                    console.error('NO')
+                
+                console.error('NO')
                 // LOSE: If update to final image (hangman6.png), Display LOSER Screen
             }
                 // else if(attempts==7){
