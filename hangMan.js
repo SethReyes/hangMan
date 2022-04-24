@@ -147,8 +147,15 @@ for (let i of hiddenWord){
     displayWord.innerText += " _ " // [' ', '_', ' ', '_', ' ']
 
 }
-
+let attempts = 0;
 let hiddenWordArray = hiddenWord.split("");
+
+//adding/removing img
+let hangman = document.createElement('img')
+let rm=document.getElementById('hangmanPic')
+hangman.src =`images/hangman${attempts}.png`
+document.getElementById('hangmanPic').appendChild(hangman)
+
 
 keys.map(key=>{
     key.addEventListener('click',()=>{
@@ -166,9 +173,22 @@ keys.map(key=>{
             }
         }
         else{
-            //update image
-            console.error('NO')
-            // LOSE: If update to final image (hangman7.png), Display LOSER Screen
+            console.log(attempts)
+            if(attempts<6){
+                attempts=attempts+1
+                //update image
+                hangman.src =`images/hangman${attempts}.png`
+                // rm.removeChild(remove.childNode[0]);
+                document.getElementById('hangmanPic').appendChild(hangman)
+                    console.error('NO')
+                // LOSE: If update to final image (hangman6.png), Display LOSER Screen
+            }
+                // else if(attempts==7){
+            //     attempts=attempts+2
+            //     hangman.src =`images/hangman${attempts}.png`
+            //     // rm.removeChild(remove.childNode[0]);
+            //     document.getElementById('hangmanPic').appendChild(hangman)
+            // }
         }
     })
 })
@@ -176,3 +196,5 @@ keys.map(key=>{
 reset.addEventListener('click',()=>{
     window.location.reload();
 })
+
+
