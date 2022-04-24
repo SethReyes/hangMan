@@ -159,7 +159,7 @@ document.getElementById('hangmanPic').appendChild(hangman)
 
 keys.map(key=>{
     key.addEventListener('click',()=>{
-        key.disable = true;
+        key.disabled = true;
         if (hiddenWord.includes(key.innerText)){
             let dispWord=displayWord.innerText.split("");
             console.log('YES')
